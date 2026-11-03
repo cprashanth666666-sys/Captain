@@ -1,0 +1,328 @@
+{
+ "raw": {
+  "articles": 105542,
+  "customers_all": 1371980,
+  "tx_rows": 3205663,
+  "tx_customers": 136670,
+  "tx_articles": 86266,
+  "date_min": "2018-09-20",
+  "date_max": "2020-09-22",
+  "customers_sample": 136670,
+  "fashion_news_values": {
+   "NONE": 877711,
+   "Regularly": 477416,
+   "nan": 16011,
+   "Monthly": 842
+  },
+  "age_gt90_sample": 5,
+  "age_lt18_sample": 913,
+  "age_min": 16.0,
+  "age_max": 99.0,
+  "age_missing_ids_not_in_customers": 0,
+  "tx_unknown_article": 0,
+  "article_id_dupes": 0,
+  "customer_id_dupes": 0
+ },
+ "missing": {
+  "articles": {
+   "detail_desc": [
+    416,
+    0.003941558810710428
+   ]
+  },
+  "customers_all": {
+   "FN": [
+    895050,
+    0.6523783145526902
+   ],
+   "Active": [
+    907576,
+    0.6615081852505138
+   ],
+   "club_member_status": [
+    6062,
+    0.00441843175556495
+   ],
+   "fashion_news_frequency": [
+    16011,
+    0.011669995189434249
+   ],
+   "age": [
+    15861,
+    0.011560664149623172
+   ]
+  },
+  "customers_sample": {
+   "FN": [
+    89054,
+    0.6515987414941099
+   ],
+   "Active": [
+    90234,
+    0.6602326772517744
+   ],
+   "club_member_status": [
+    615,
+    0.004499890246579352
+   ],
+   "fashion_news_frequency": [
+    1570,
+    0.011487524694519646
+   ],
+   "age": [
+    1598,
+    0.01169239774639643
+   ]
+  },
+  "transactions": {}
+ },
+ "dups": {
+  "exact_extra_rows": 296434,
+  "share": 0.09247197849555615,
+  "distinct_rows_with_copies": 254099,
+  "same_cust_day_article_other_price": 24252,
+  "article_full_row_dupes": 0
+ },
+ "price": {
+  "min": 3.389830508474576e-05,
+  "p50": 0.0254067796610169,
+  "p99": 0.1001694915254237,
+  "max": 0.5067796610169492,
+  "iqr_upper_fence": 0.060906779661016756,
+  "n_above_fence": 158080,
+  "rel_gt3_rows": 3065,
+  "rel_lt_third_rows": 30767
+ },
+ "volume": {
+  "rows_per_customer_p50": 9.0,
+  "p99": 189.0,
+  "p999": 381.3310000000056,
+  "max": 1208,
+  "n_gt_p999": 137,
+  "iqr_fence": 63.0,
+  "n_above_iqr_fence": 12510,
+  "basket_max_rows": 220,
+  "basket_gt50": 99
+ },
+ "articles": {
+  "in_scope": 70675,
+  "baby": 34711,
+  "non_apparel": 219,
+  "detail_desc_missing": 416
+ },
+ "clean": {
+  "units_raw": 3205663,
+  "lines_after_collapse": 2909229,
+  "units_out_of_scope_baby": 123390,
+  "units_out_of_scope_non_apparel": 10327,
+  "units_after_scope": 3071946,
+  "customers_under18_removed": 913,
+  "age_gt90_set_missing": 5,
+  "customers_in_scope": 132435,
+  "lines_final": 2781345,
+  "units_final": 3066344
+ },
+ "features": {
+  "price_rel_nan": 5373,
+  "price_rel_high": 2596,
+  "price_rel_low": 28198,
+  "split_rows": {
+   "test": 23377,
+   "train": 3018367,
+   "valid": 24600
+  },
+  "customers_no_train_history": 1083,
+  "heavy_buyer_cut": 362.5660000000207,
+  "heavy_buyers": 133
+ },
+ "rep": {
+  "age_mean_sample": 36.39687722103767,
+  "age_mean_rest": 36.38586802964996,
+  "age_smd": 0.0007698896939164173,
+  "age_missing_sample": 0.01169239774639643,
+  "age_missing_rest": 0.011546089645514082,
+  "club_sample": {
+   "ACTIVE": 0.9274749396356187,
+   "PRE-CREATE": 0.06764469159288798,
+   "nan": 0.004499890246579352,
+   "LEFT CLUB": 0.0003804785249140265
+  },
+  "club_rest": {
+   "ACTIVE": 0.9274862180343395,
+   "PRE-CREATE": 0.0677684144061005,
+   "nan": 0.004409419497939789,
+   "LEFT CLUB": 0.0003359480616201601
+  },
+  "fn_sample": 0.3484012585058901,
+  "fn_rest": 0.3475354364491504,
+  "active_sample": 0.33976732274822563,
+  "active_rest": 0.3383506973957954,
+  "news_sample": {
+   "NONE": 0.639167337382015,
+   "REGULARLY": 0.34867930050486573,
+   "UNKNOWN": 0.011487524694519646,
+   "MONTHLY": 0.0006658374185995464
+  },
+  "news_rest": {
+   "NONE": 0.6398037739514778,
+   "REGULARLY": 0.3478980984530199,
+   "UNKNOWN": 0.011690183030980078,
+   "MONTHLY": 0.0006079445645222656
+  },
+  "sample_share_of_customers": 0.09961515473986501,
+  "age_band_sample": {
+   "25-34": 0.2925133084154491,
+   "18-24": 0.2589421225506852,
+   "45-54": 0.1859629252085929,
+   "35-44": 0.11719711556612677,
+   "55-64": 0.10282025144410466,
+   "65+": 0.03128327103862272,
+   "unknown": 0.01128100577641862
+  },
+  "age_band_rest": {
+   "(24, 34]": 0.28986844896224306,
+   "(17, 24]": 0.25648889846172995,
+   "(44, 54]": 0.18721310481906103,
+   "(34, 44]": 0.12456932452231569,
+   "(54, 64]": 0.10258081793739307,
+   "(64, 200]": 0.03220351059377731,
+   "(15, 17]": 0.007075894703479882
+  },
+  "units_by_index_group": {
+   "Divided": 0.23334694346100765,
+   "Ladieswear": 0.6678461385937129,
+   "Menswear": 0.05839299178435296,
+   "Sport": 0.0404139261609265
+  },
+  "units_by_product_group": {
+   "Accessories": 0.05062119579538369,
+   "Bags": 0.00021817512973104126,
+   "Garment Full body": 0.11135606442069122,
+   "Garment Lower body": 0.22113207128750068,
+   "Garment Upper body": 0.396309742155479,
+   "Nightwear": 0.0103051060155025,
+   "Shoes": 0.023066883559052734,
+   "Socks & Tights": 0.021062216111434332,
+   "Swimwear": 0.0827385968436679,
+   "Underwear": 0.08318994868155694
+  },
+  "units_by_channel": {
+   "1": 0.29213454198224337,
+   "2": 0.7078654580177567
+  },
+  "units_by_month": {
+   "2018-09": 52439,
+   "2018-10": 126203,
+   "2018-11": 116892,
+   "2018-12": 104887,
+   "2019-01": 115870,
+   "2019-02": 107195,
+   "2019-03": 124858,
+   "2019-04": 143509,
+   "2019-05": 153447,
+   "2019-06": 187805,
+   "2019-07": 177557,
+   "2019-08": 121896,
+   "2019-09": 119313,
+   "2019-10": 112951,
+   "2019-11": 117072,
+   "2019-12": 109740,
+   "2020-01": 104336,
+   "2020-02": 97705,
+   "2020-03": 102306,
+   "2020-04": 131055,
+   "2020-05": 133658,
+   "2020-06": 174572,
+   "2020-07": 132534,
+   "2020-08": 121046,
+   "2020-09": 77498
+  },
+  "catalogue_share_by_index_group": {
+   "Ladieswear": 0.3765041405317314,
+   "Baby/Children": 0.32888328816963863,
+   "Divided": 0.14353527505637567,
+   "Menswear": 0.11893843209338463,
+   "Sport": 0.03213886414886964
+  },
+  "catalogue_in_scope_never_sold": 8247,
+  "colour_master_share": {
+   "Black": 0.350971710936542,
+   "White": 0.13214270805884792,
+   "Blue": 0.12683312765951896,
+   "Beige": 0.06651178080476293,
+   "Grey": 0.05702589141987983,
+   "Red": 0.04906820630692447,
+   "Pink": 0.04832693265987117,
+   "Green": 0.029820202821340333,
+   "Khaki green": 0.028139047673711757,
+   "Yellow": 0.02339006973777241,
+   "Orange": 0.021997205792957344,
+   "Brown": 0.02029811397547046
+  },
+  "buyers_by_index_group": {
+   "Divided": 87517,
+   "Ladieswear": 119565,
+   "Menswear": 34001,
+   "Sport": 31868
+  },
+  "units_per_customer_age_band": {
+   "18-24": 0.2279727973336641,
+   "25-34": 0.4075039234614908,
+   "35-44": 0.13319706832485723,
+   "45-54": 0.2080407141149336,
+   "55-64": 0.1017065484504799,
+   "65+": 0.019237095721674227,
+   "unknown": 0.004809903122410201
+  },
+  "customers_by_age_band": {
+   "25-34": 38739,
+   "18-24": 34293,
+   "45-54": 24628,
+   "35-44": 15521,
+   "55-64": 13617,
+   "65+": 4143,
+   "unknown": 1494
+  },
+  "units_by_age_band": {
+   "18-24": 634071,
+   "25-34": 1133409,
+   "35-44": 370467,
+   "45-54": 578633,
+   "55-64": 282881,
+   "65+": 53505,
+   "unknown": 13378
+  },
+  "covid_units_2019_vs_2020_jan_aug": [
+   909072,
+   795171
+  ]
+ },
+ "outputs": {
+  "transactions_clean.csv.gz": {
+   "bytes": 32445098,
+   "sha256": "b7762ff47cb6b31ad1f5e571e83e14618d6031b772ec66fabf3c000c3884157a"
+  },
+  "customers_clean.csv.gz": {
+   "bytes": 1150524,
+   "sha256": "ccce4dcfe484c54ea8c07b61e80ebd400a7f84be5a4fe68acaad83360df9750f"
+  },
+  "articles_clean.csv.gz": {
+   "bytes": 4384565,
+   "sha256": "5c4185a6536ac4412007fa50041c961c31823274e551d571432927c82e21d554"
+  },
+  "data_dictionary.csv": {
+   "bytes": 3319,
+   "sha256": "449f99cd1602fbb40f809236e706fda64bde4568ce96c8b3b24232672b965dfb"
+  },
+  "rows": {
+   "transactions": 2781345,
+   "customers": 132435,
+   "articles": 105542
+  }
+ },
+ "inputs_sha256": {
+  "articles.csv": "25f21882053517f7684ea43f524225a9481a7bb9aab9cf0abfc7fe8c4576a72b",
+  "customers.csv": "abf3450c37ee1c16124e0d3379371153f5371148742efdcfe44c97c0445df6b2",
+  "transactions_train_sample10pct.csv": "6a92d5004d831c10cf6036fd189888ec5f9b7c2c5e7bb7831662caac0d8548da"
+ }
+}

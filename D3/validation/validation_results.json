@@ -1,0 +1,277 @@
+{
+ "metrics": [
+  {
+   "metric": "units in scope",
+   "d3": 3066344.0,
+   "independent": 3066344.0,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "customers in scope",
+   "d3": 132435.0,
+   "independent": 132435.0,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "mean units per visit",
+   "d3": 3.4550938889107985,
+   "independent": 3.4550938889107985,
+   "abs_diff": 0.0,
+   "tol": 0.005,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "single-unit visit share",
+   "d3": 0.3010980467275503,
+   "independent": 0.3010980467275503,
+   "abs_diff": 0.0,
+   "tol": 0.002,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "customers with one visit",
+   "d3": 0.32022501604560727,
+   "independent": 0.32022501604560727,
+   "abs_diff": 0.0,
+   "tol": 0.002,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "median visits per customer",
+   "d3": 3.0,
+   "independent": 3.0,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "Gini of units per customer",
+   "d3": 0.6424634173918925,
+   "independent": 0.6424558665154162,
+   "abs_diff": 7.550876476303259e-06,
+   "tol": 0.002,
+   "ok": true,
+   "note": "different formula from D3's trapezoid version"
+  },
+  {
+   "metric": "top 10% customers' share of units",
+   "d3": 0.48044707312682466,
+   "independent": 0.48044707312682466,
+   "abs_diff": 0.0,
+   "tol": 0.002,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "top 1% customers' share of units",
+   "d3": 0.11489774141453145,
+   "independent": 0.11489774141453145,
+   "abs_diff": 0.0,
+   "tol": 0.002,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "bottom 50% customers' share of units",
+   "d3": 0.08380729624595283,
+   "independent": 0.08380729624595283,
+   "abs_diff": 0.0,
+   "tol": 0.002,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "median age (known ages)",
+   "d3": 31.0,
+   "independent": 31.0,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "menswear share of units",
+   "d3": 0.05839299178435296,
+   "independent": 0.05839299178435296,
+   "abs_diff": 0.0,
+   "tol": 0.0005,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "top-3 colour share of known-colour units",
+   "d3": 0.615792906513387,
+   "independent": 0.6153720872539,
+   "abs_diff": 0.00042081925948700416,
+   "tol": 0.003,
+   "ok": true,
+   "note": "Black, White, Blue"
+  },
+  {
+   "metric": "weekly units Mar-Aug 2020 vs 2019",
+   "d3": -0.13073252716677408,
+   "independent": -0.13073252716677408,
+   "abs_diff": 0.0,
+   "tol": 0.002,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "channel-2 share Mar-Aug 2019",
+   "d3": 0.6984529794142579,
+   "independent": 0.6984529794142579,
+   "abs_diff": 0.0,
+   "tol": 0.002,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "channel-2 share Mar-Aug 2020",
+   "d3": 0.7514194348706017,
+   "independent": 0.7514194348706017,
+   "abs_diff": 0.0,
+   "tol": 0.002,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "single-unit share, age 18-24",
+   "d3": 0.33617056123161704,
+   "independent": 0.33617056123161704,
+   "abs_diff": 0.0,
+   "tol": 0.004,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "single-unit share, age 65+",
+   "d3": 0.43469639552304573,
+   "independent": 0.43469639552304573,
+   "abs_diff": 0.0,
+   "tol": 0.004,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "single-unit share, channel 1",
+   "d3": 0.3836244078342643,
+   "independent": 0.38309458177052735,
+   "abs_diff": 0.0005298260637369712,
+   "tol": 0.01,
+   "ok": true,
+   "note": "channel taken from first line of the visit; D3 does the same on a different row order"
+  },
+  {
+   "metric": "single-unit share, channel 2",
+   "d3": 0.246446030229814,
+   "independent": 0.2466719532976767,
+   "abs_diff": 0.00022592306786267669,
+   "tol": 0.01,
+   "ok": true,
+   "note": "channel taken from first line of the visit; D3 does the same on a different row order"
+  },
+  {
+   "metric": "garment visits that are complete outfits",
+   "d3": 0.450198982153175,
+   "independent": 0.450198982153175,
+   "abs_diff": 0.0,
+   "tol": 0.03,
+   "ok": true,
+   "note": "approximation: product groups instead of D3's role map"
+  },
+  {
+   "metric": "top-100 overlap (Jaccard), 1-week gap",
+   "d3": 0.28869491363098665,
+   "independent": 0.28975199629518256,
+   "abs_diff": 0.0010570826641959075,
+   "tol": 0.01,
+   "ok": true,
+   "note": "mean over consecutive complete weeks"
+  },
+  {
+   "metric": "next-week coverage of last week's top 12",
+   "d3": 0.01625532656980552,
+   "independent": 0.016296137511343945,
+   "abs_diff": 4.081094153842585e-05,
+   "tol": 0.005,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "articles sold in scope",
+   "d3": 62428.0,
+   "independent": 62428.0,
+   "abs_diff": 0.0,
+   "tol": 0,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "metric": "top 1% of articles' share of units",
+   "d3": 0.1444899854680362,
+   "independent": 0.1444899854680362,
+   "abs_diff": 0.0,
+   "tol": 0.005,
+   "ok": true,
+   "note": ""
+  }
+ ],
+ "hypotheses": {
+  "H1": {
+   "d3": "Not supported",
+   "rule_recomputed": "Not supported",
+   "agree": true
+  },
+  "H2": {
+   "d3": "Not supported",
+   "rule_recomputed": "Not supported",
+   "agree": true
+  },
+  "H3": {
+   "d3": "Supported",
+   "rule_recomputed": "Supported",
+   "agree": true
+  },
+  "H4": {
+   "d3": "Supported",
+   "rule_recomputed": "Supported",
+   "agree": true
+  },
+  "H5": {
+   "d3": "Not supported",
+   "rule_recomputed": "Not supported",
+   "agree": true
+  },
+  "H6": {
+   "d3": "Supported",
+   "rule_recomputed": "Supported",
+   "agree": true
+  },
+  "H7": {
+   "d3": "Supported",
+   "rule_recomputed": "Supported",
+   "agree": true
+  }
+ },
+ "insight_log_text_matches": {
+  "45% complete": true,
+  "mean 3.5 units": true,
+  "Gini 0.64": true,
+  "top10 48%": true,
+  "-13% 2020": true,
+  "19x repeat": true
+ },
+ "n_metrics": 25,
+ "n_ok": 25,
+ "n_hyp_agree": 7
+}
