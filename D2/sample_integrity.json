@@ -1,0 +1,9 @@
+{
+ "full_rows": 31788324,
+ "full_buying_customers": 1362281,
+ "sample_rows": 3205663,
+ "sample_customers": 136670,
+ "sample_share_of_buying_customers": 0.10032438241449451,
+ "full_rows_for_sample_customers": 3205663,
+ "customers_with_row_count_mismatch": 0
+}
