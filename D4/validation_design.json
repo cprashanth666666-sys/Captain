@@ -1,0 +1,32 @@
+{
+  "declared_on": "2026-11-12",
+  "declared_before_any_model_run": true,
+  "problem": "Top-12 next-week article recommendation per customer (ranking / implicit-feedback recommender). Positive = customer bought the article in the target week.",
+  "unit_of_evaluation": "Customers with at least one in-scope purchase in the target week (as in the Kaggle H&M metric). Cold-start customers (no earlier purchase) are included and scored on popularity only.",
+  "primary_metric": "MAP@12 (Kaggle H&M definition: AP@12 divided by min(|actual|, 12), averaged over evaluated customers)",
+  "secondary_metrics": ["Recall@12", "candidate recall (share of target-week purchases present in the candidate set)", "MAP@12 by activity tier and by age band (test only)"],
+  "data_version": "data-v1.0 (D2), transactions_clean.csv.gz sha256 b7762ff47cb6b31ad1f5e571e83e14618d6031b772ec66fabf3c000c3884157a",
+  "split": {
+    "type": "time-based, by purchase date (same column 'split' as data-v1.0)",
+    "train": "2018-09-20 .. 2020-09-08 (history and training target weeks)",
+    "validation": "2020-09-09 .. 2020-09-15 (all tuning and model selection)",
+    "test": "2020-09-16 .. 2020-09-22 (touched once, after configurations are frozen)"
+  },
+  "learned_ranker_training_weeks": {
+    "for_validation": "4 target weeks ending 2020-09-08 (starts 2020-08-12, 08-19, 08-26, 09-02); features for each week use only transactions dated before that week",
+    "for_test": "same 4-week scheme shifted one week later (starts 2020-08-19 .. 2020-09-09), so the validation week becomes the most recent training week; hyper-parameters stay frozen at the validation choice"
+  },
+  "leakage_guards": [
+    "Every feature for a target week starting on day S is computed from rows with t_dat < S only",
+    "No customer-level field from customers_clean that was derived from the train window is used for the test week (units_train, visits_train etc. are recomputed per week from history instead); only age is taken from customers_clean",
+    "basket_units (flagged leakage-risk in the D2 dictionary) is not used",
+    "Test set is scored once per model by run_experiments.py --stage test, which writes outputs/test_lock.json and refuses a second run unless --force is given (any forced rerun is logged as such)"
+  ],
+  "tuning_budget": {
+    "B0, B1": "no tuning (rules fixed in advance)",
+    "M1 item-to-item co-purchase scorer": "full grid of 3 x 3 x 3 = 27 settings on validation",
+    "M2 logistic-regression ranker": "grid over C in {0.01, 0.1, 1}",
+    "M3 LightGBM LambdaRank": "random search, 12 trials, sampler seed 42; best trial re-run with model seeds 1, 2, 3 to show seed variance"
+  },
+  "selection_rule": "Highest validation MAP@12 per model family; ties broken by the simpler setting. The overall choice is made on validation only."
+}

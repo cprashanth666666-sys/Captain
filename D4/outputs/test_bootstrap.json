@@ -1,0 +1,40 @@
+{
+  "resamples": 2000,
+  "seed": 7,
+  "n_users": 6820,
+  "mean": {
+    "B0 popularity-7d": 0.008235,
+    "B1 repurchase-28d + popularity": 0.026625,
+    "M1 co-purchase scorer": 0.026192,
+    "M2 logistic-regression ranker": 0.027991,
+    "M3 LightGBM LambdaRank": 0.030836
+  },
+  "M3 - B1": {
+    "diff": 0.00421,
+    "ci95": [
+      0.002166,
+      0.006344
+    ]
+  },
+  "M3 - M2": {
+    "diff": 0.002845,
+    "ci95": [
+      0.000985,
+      0.004872
+    ]
+  },
+  "M3 - M1": {
+    "diff": 0.004644,
+    "ci95": [
+      0.002602,
+      0.006805
+    ]
+  },
+  "M1 - B1": {
+    "diff": -0.000433,
+    "ci95": [
+      -0.00162,
+      0.00072
+    ]
+  }
+}

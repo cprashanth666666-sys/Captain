@@ -1,0 +1,23 @@
+{
+  "selected_on": "validation week 2020-09-09..15",
+  "design_sha": "e3cb0002dafc",
+  "M1": {
+    "pair_weeks": 12,
+    "w_cf": 1.0,
+    "w_pop": 0.1,
+    "hl": 14.0,
+    "w_rep": 1.0
+  },
+  "M2": {
+    "C": 1.0,
+    "neg_frac": 0.2
+  },
+  "M3": {
+    "num_leaves": 63,
+    "learning_rate": 0.0337,
+    "n_estimators": 200,
+    "min_child_samples": 20,
+    "colsample_bytree": 0.8,
+    "subsample": 1.0
+  }
+}
